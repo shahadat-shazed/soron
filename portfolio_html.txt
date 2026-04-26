@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Ishak Rahman | Strategic Marketing & Brand Identity</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css?v=4">
+    <style>
+        /* INLINE CSS FOR BACKGROUND GRADIENT TO BYPASS CACHE */
+        body {
+            background-color: #030712 !important;
+            background-image: radial-gradient(circle at 80% 20%, rgba(30, 41, 59, 0.6) 0%, #030712 60%) !important;
+        }
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+            opacity: 0.15;
+            pointer-events: none;
+            z-index: 9999;
+        }
+        .services, .skills, .pricing, .experience, .awards, .tools-grid, .footer {
+            background: transparent !important;
+        }
+        .cursor-glow {
+            position: fixed;
+            top: 50%; left: 50%;
+            width: 450px; height: 450px;
+            background: radial-gradient(circle, rgba(20, 184, 166, 0.12) 0%, transparent 60%);
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            transition: transform 0.1s ease-out;
+        }
+        .theme-grid-bg {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            pointer-events: none;
+            z-index: -2;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 56px 56px;
+            mask-image: radial-gradient(circle at top right, black 40%, transparent 90%);
+            -webkit-mask-image: radial-gradient(circle at top right, black 40%, transparent 90%);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ambient Gradient Orbs -->
+    <div class="theme-grid-bg"></div>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+    <div class="cursor-glow"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-brand">MD ISHAK RAHAMAN</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container fade-in">
+            <div class="hero-content">
+                <h1>Empowering Growth through Strategic <span>Marketing</span> & Brand <span>Identity</span></h1>
+                <p>I am Md Ishak Rahman, an <span class="highlight-text">NSDA Level 4 & 6 Certified Professional</span> Digital Marketing Trainer & Branding Specialist. I specialize in Local SEO, Meta Ads, and empowering the next generation through expert Student Mentorship.</p>
+                <div class="hero-actions">
+                    <a href="#services" class="btn btn-primary">Explore Services</a>
+                    <a href="https://wa.link/3gac5u" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> Let's Talk</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="decorative-blur"></div>
+                <div class="rotating-ring ring-1"></div>
+                <div class="rotating-ring ring-2"></div>
+                <div class="rotating-ring ring-3"></div>
+                <div class="floating-badge badge-top-left">Marketing</div>
+                <div class="floating-badge badge-bottom-right">Identity</div>
+                <div class="image-wrapper">
+                    <div class="shine"></div>
+                    <div class="overlay-gradient"></div>
+                    <a href="https://ibb.co.com/27VTPpW6" target="_blank" rel="noopener">
+                        <img src="https://i.ibb.co.com/VWnsDkJN/Ishak.jpg" alt="Md Ishak Rahman" class="profile-img" border="0">
+                    </a>
+                </div>
+                <div class="float-dot dot-1"></div>
+                <div class="float-dot dot-2"></div>
+                <div class="float-dot dot-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="services">
+        <div class="container fade-in">
+            <h2 class="section-title">My <span>Services</span></h2>
+            <div class="services-grid">
+                
+                <div class="service-card">
+                    <i class="fa-solid fa-chart-line service-icon"></i>
+                    <h3>Advanced Digital Marketing</h3>
+                    <p>Comprehensive data-driven marketing, tracking, and advertising solutions.</p>
+                    <ul>
+                        <li>Meta, Google & Bing Ads</li>
+                        <li>SEO (On/Off Page & Local)</li>
+                        <li>Pixel Setup & Server Side Tracking</li>
+                        <li>Lead Gen & Email Marketing</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fa-solid fa-pen-nib service-icon"></i>
+                    <h3>Brand Identity Design</h3>
+                    <p>Creating memorable visual identities that connect with your target audience.</p>
+                    <ul>
+                        <li>Logo & Identity Design</li>
+                        <li>Social Media Branding</li>
+                        <li>Visual Strategy & Guidelines</li>
+                        <li>Marketing Creatives</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fa-solid fa-laptop-code service-icon"></i>
+                    <h3>Web Design & Optimization</h3>
+                    <p>Building high-performance, conversion-focused websites for modern businesses.</p>
+                    <ul>
+                        <li>WordPress Design & Setup</li>
+                        <li>Shopify E-Commerce Design</li>
+                        <li>Landing Page Optimization</li>
+                        <li>UI/UX Strategy</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fa-solid fa-wand-magic-sparkles service-icon"></i>
+                    <h3>Advanced Photo Editing</h3>
+                    <p>Professional high-end photo retouching and editing using Adobe Photoshop.</p>
+                    <ul>
+                        <li>Clipping Path & Multipath</li>
+                        <li>Jewelry & Product Retouching</li>
+                        <li>Hair Masking & Restoration</li>
+                        <li>Shadow Creation & Color Correction</li>
+                        <li>Real Estate Retouching</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Showcase -->
+    <section id="projects" class="projects">
+        <div class="container fade-in">
+            <h2 class="section-title">Project <span>Showcase</span></h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <!-- Placeholder using Unsplash -->
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Brand Identity" class="project-image">
+                    <div class="project-overlay">
+                        <h3>Tech Startup Rebrand</h3>
+                        <p>Complete visual identity and logo design.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Digital Marketing" class="project-image">
+                    <div class="project-overlay">
+                        <h3>Local SEO Growth Case</h3>
+                        <p>300% increase in organic local traffic via Google My Business optimization.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Meta Ads Campaign" class="project-image">
+                    <div class="project-overlay">
+                        <h3>E-Commerce Meta Ads</h3>
+                        <p>Managed paid campaign scaling ROAS by 4x.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" class="skills">
+        <div class="container fade-in">
+            <h2 class="section-title">Technical <span>Arsenal</span></h2>
+            <div class="skills-grid">
+                
+                <div class="skill-item">
+                    <i class="fa-solid fa-chart-pie skill-icon"></i>
+                    <span>Google Analytics</span>
+                </div>
+                
+                <div class="skill-item">
+                    <i class="fa-brands fa-google skill-icon"></i>
+                    <span>Search Console</span>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fa-brands fa-meta skill-icon"></i>
+                    <span>Meta Business</span>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fa-solid fa-bezier-curve skill-icon"></i>
+                    <span>Adobe Illustrator</span>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fa-solid fa-wand-magic-sparkles skill-icon"></i>
+                    <span>Adobe Photoshop</span>
+                </div>
+
+                <div class="skill-item">
+                    <i class="fa-brands fa-wordpress skill-icon"></i>
+                    <span>WordPress</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Tools Summary -->
+    <section class="tools">
+        <div class="container fade-in">
+            <h2 class="section-title">🛠 Tools & <span>Technologies</span></h2>
+            <div class="tools-grid">
+                <span class="tool-tag">Google Analytics GA4</span>
+                <span class="tool-tag">Google Ads</span>
+                <span class="tool-tag">Meta Ads</span>
+                <span class="tool-tag">Bing Marketing</span>
+                <span class="tool-tag">YouTube Marketing</span>
+                <span class="tool-tag">Server Side Tracking</span>
+                <span class="tool-tag">AI Prompt Engineering</span>
+                <span class="tool-tag">AI Data Driven</span>
+                <span class="tool-tag">Adobe Photoshop</span>
+                <span class="tool-tag">Adobe Illustrator</span>
+                <span class="tool-tag">Adobe Premiere Pro</span>
+                <span class="tool-tag">Adobe After Effects</span>
+                <span class="tool-tag">Capture One Pro</span>
+                <span class="tool-tag">Canva</span>
+                <span class="tool-tag">CapCut</span>
+                <span class="tool-tag">WordPress / Shopify</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Segment -->
+    <section id="pricing" class="pricing">
+        <div class="container fade-in">
+            <h2 class="section-title">Premium <span>Services</span></h2>
+            <div class="pricing-grid">
+                
+                <div class="pricing-card">
+                    <h3 class="pricing-title">YouTube: Basic</h3>
+                    <div class="pricing-price">4,500 <span>TK</span></div>
+                    <p class="pricing-desc">One-time setup for a professional channel appearance including branding.</p>
+                    <div class="pricing-delivery"><i class="fa-regular fa-clock"></i> 3 Days Delivery</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Channel Creation</li>
+                        <li><i class="fa-solid fa-check"></i> Professional Logo Design</li>
+                        <li><i class="fa-solid fa-check"></i> Banner Design</li>
+                        <li><i class="fa-solid fa-check"></i> Basic Settings Config</li>
+                    </ul>
+                    <a href="https://wa.link/3gac5u" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> Get Started</a>
+                </div>
+
+                <div class="pricing-card popular">
+                    <h3 class="pricing-title">YouTube: Pro</h3>
+                    <div class="pricing-price">7,500 <span>TK</span></div>
+                    <p class="pricing-desc">Full channel branding and SEO optimization for maximum organic reach.</p>
+                    <div class="pricing-delivery"><i class="fa-regular fa-clock"></i> 5 Days Delivery</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Creation + Full Branding</li>
+                        <li><i class="fa-solid fa-check"></i> Keywords & Tags SEO</li>
+                        <li><i class="fa-solid fa-check"></i> Intro/Outro Concepts</li>
+                        <li><i class="fa-solid fa-check"></i> Growth Strategy Plan</li>
+                    </ul>
+                    <a href="https://wa.link/3gac5u" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-title">FB Ads: Starter</h3>
+                    <div class="pricing-price">3,000 <span>TK / mon</span></div>
+                    <p class="pricing-desc">Small shops/Page growth focus with targeted ad creative and audience selection.</p>
+                    <div class="pricing-delivery"><i class="fa-regular fa-clock"></i> Monthly Management</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> 1-2 Ad Campaigns</li>
+                        <li><i class="fa-solid fa-check"></i> Audience Targeting</li>
+                        <li><i class="fa-solid fa-check"></i> Page Growth Strategy</li>
+                        <li><i class="fa-solid fa-check"></i> Basic Reporting</li>
+                    </ul>
+                    <a href="https://wa.link/3gac5u" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> Get Started</a>
+                </div>
+
+                <div class="pricing-card popular">
+                    <h3 class="pricing-title">FB Ads: Pro</h3>
+                    <div class="pricing-price">8,000 <span>TK / mon</span></div>
+                    <p class="pricing-desc">Business Pro setup featuring advanced retargeting and Pixel optimization for sales.</p>
+                    <div class="pricing-delivery"><i class="fa-regular fa-clock"></i> Monthly Management</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Retargeting Campaigns</li>
+                        <li><i class="fa-solid fa-check"></i> Pixel Setup & Optimiz.</li>
+                        <li><i class="fa-solid fa-check"></i> Lead Gen Focus</li>
+                        <li><i class="fa-solid fa-check"></i> Detailed Sales Tracking</li>
+                    </ul>
+                    <a href="https://wa.link/3gac5u" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Commercial Video Ads</h3>
+                    <div class="pricing-price">2,000 <span>TK</span></div>
+                    <p class="pricing-desc">Eye-catching video edits designed specifically to convert viewers into customers for Social Media & Ads.</p>
+                    <div class="pricing-delivery"><i class="fa-regular fa-clock"></i> 2 Days Delivery</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> High-energy 30–60s clips</li>
+                        <li><i class="fa-solid fa-check"></i> Social Media & Ad focus</li>
+                        <li><i class="fa-solid fa-check"></i> Motion Graphics elements</li>
+                        <li><i class="fa-solid fa-check"></i> Conversion-focused edit</li>
+                    </ul>
+                    <a href="https://wa.link/3gac5u" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Professional Signature</h3>
+                    <div class="pricing-price">500 <span>TK</span></div>
+                    <p class="pricing-desc">A clean, clickable HTML signature with social links and contact info for a professional email presence.</p>
+                    <div class="pricing-delivery"><i class="fa-regular fa-clock"></i> 1 Day Delivery</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Pro Gmail Signature</li>
+                        <li><i class="fa-solid fa-check"></i> Basic Banner Design</li>
+                        <li><i class="fa-solid fa-check"></i> Clickable Social Links</li>
+                        <li><i class="fa-solid fa-check"></i> Brand Integration</li>
+                    </ul>
+                    <a href="https://wa.link/3gac5u" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-title">General Landing Page</h3>
+                    <div class="pricing-price">1,000 <span>TK</span></div>
+                    <p class="pricing-desc">A clean, focused single-product landing page perfect for launching fast.</p>
+                    <div class="pricing-delivery"><i class="fa-regular fa-clock"></i> 1 Day Delivery</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Single product showcase</li>
+                        <li><i class="fa-solid fa-check"></i> Clean responsive layout</li>
+                        <li><i class="fa-solid fa-check"></i> Mobile-optimized design</li>
+                        <li><i class="fa-solid fa-check"></i> Basic CTA integration</li>
+                    </ul>
+                    <a href="https://wa.link/3gac5u" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Pro E-commerce Build</h3>
+                    <div class="pricing-price">30,000 <span>TK</span></div>
+                    <p class="pricing-desc">A high-converting WooCommerce store optimized for mobile. Includes local payment integration.</p>
+                    <div class="pricing-delivery"><i class="fa-regular fa-clock"></i> 10–14 Days Delivery</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> WooCommerce Store Setup</li>
+                        <li><i class="fa-solid fa-check"></i> Local Payment Integration</li>
+                        <li><i class="fa-solid fa-check"></i> Premium Professional Theme</li>
+                        <li><i class="fa-solid fa-check"></i> Inventory Management</li>
+                    </ul>
+                    <a href="https://wa.link/3gac5u" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Monthly Store Manager</h3>
+                    <div class="pricing-price">7,000 <span>TK / mon</span></div>
+                    <p class="pricing-desc">I handle all technical updates, security, and product uploads so you can focus on selling.</p>
+                    <div class="pricing-delivery"><i class="fa-regular fa-clock"></i> Monthly Support</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Technical Updates</li>
+                        <li><i class="fa-solid fa-check"></i> Security Monitoring</li>
+                        <li><i class="fa-solid fa-check"></i> 20% Faster Loading Speeds</li>
+                        <li><i class="fa-solid fa-check"></i> Regular Backups</li>
+                    </ul>
+                    <a href="https://wa.link/3gac5u" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> Get Started</a>
+                </div>
+
+                <div class="pricing-card popular">
+                    <h3 class="pricing-title">Premium Branding</h3>
+                    <div class="pricing-price">5,000 <span>TK</span></div>
+                    <p class="pricing-desc">The ultimate brand identity package including custom high-end logo design and full brand kits.</p>
+                    <div class="pricing-delivery"><i class="fa-regular fa-clock"></i> 3-5 Days Delivery</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Custom Premium Logo</li>
+                        <li><i class="fa-solid fa-check"></i> Complete Brand Identity</li>
+                        <li><i class="fa-solid fa-check"></i> Source Files Included</li>
+                        <li><i class="fa-solid fa-check"></i> Social Media Kit</li>
+                    </ul>
+                    <a href="https://wa.link/3gac5u" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-title">High-End Photo Manipulation</h3>
+                    <div class="pricing-price">3,000 <span>TK</span></div>
+                    <p class="pricing-desc">Advanced photo editing and manipulation for stunning visual effects and advertising composites.</p>
+                    <div class="pricing-delivery"><i class="fa-regular fa-clock"></i> 2-3 Days Delivery</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Advanced Manipulation</li>
+                        <li><i class="fa-solid fa-check"></i> Color Grading</li>
+                        <li><i class="fa-solid fa-check"></i> Background Replacement</li>
+                        <li><i class="fa-solid fa-check"></i> High Resolution Export</li>
+                    </ul>
+                    <a href="https://wa.link/3gac5u" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Basic Photo Retouching</h3>
+                    <div class="pricing-price">500 <span>TK / img</span></div>
+                    <p class="pricing-desc">Professional basic photo retouching for e-commerce products or personal portraits.</p>
+                    <div class="pricing-delivery"><i class="fa-regular fa-clock"></i> 1 Day Delivery</div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Blemish Removal</li>
+                        <li><i class="fa-solid fa-check"></i> Color Correction</li>
+                        <li><i class="fa-solid fa-check"></i> Light Adjustment</li>
+                        <li><i class="fa-solid fa-check"></i> Basic Cropping</li>
+                    </ul>
+                    <a href="https://wa.link/3gac5u" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> Get Started</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="experience">
+        <div class="container fade-in">
+            <h2 class="section-title">Education & <span>Experience</span></h2>
+            
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 – Present</span>
+                        <h3>Atova Technology</h3>
+                        <h4>Digital Marketing Trainer</h4>
+                        <ul>
+                            <li>Facilitate comprehensive training sessions covering SEO, marketing analytics, and digital campaign strategy.</li>
+                            <li>Mentor students in the end-to-end management of Facebook and Instagram ad campaigns.</li>
+                            <li>Provide hands-on demonstrations of Google Analytics for performance tracking and data reporting.</li>
+                            <li>Instruct on specialized Local SEO strategies and YouTube marketing optimization.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 – 2026</span>
+                        <h3>Billion Softs</h3>
+                        <h4>Graphic Designer & Branding Specialist</h4>
+                        <ul>
+                            <li>Conceptualized and designed professional logos and integrated brand identity assets.</li>
+                            <li>Produced high-impact social media marketing creatives for diverse digital campaigns.</li>
+                            <li>Partnered with marketing teams to develop visual strategies that align with campaign goals.</li>
+                            <li>Executed professional photo editing, retouching, and color correction for commercial use.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="awards">
+        <div class="container fade-in">
+            <h2 class="section-title">Awards & <span>Recognition</span></h2>
+            
+            <div class="award-card">
+                <div class="award-image">
+                    <a href="https://ibb.co.com/1fFd2wv1" target="_blank">
+                        <img src="https://i.ibb.co.com/8D1d8SKq/Copilot-20260420-022110.png" alt="Talent Hunt Winner" border="0">
+                    </a>
+                </div>
+                <div class="award-content">
+                    <div class="award-badge"><i class="fa-solid fa-trophy"></i> 1st Prize</div>
+                    <h3>2023 Path Talent Hunt</h3>
+                    <h4>Image Editing Competition</h4>
+                    <p>Recognized for outstanding photo editing and retouching skills at the Path Talent Hunt program.</p>
+                    <a href="https://share.google/hB6eHxma8eDYmK2S9" target="_blank" class="btn btn-secondary mt-4">View Competition Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="awards" style="background: var(--bg-primary);">
+        <div class="container fade-in">
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            
+            <div class="award-card">
+                <div class="award-image" style="display: flex; align-items: center; justify-content: center; background: #1a1a1a; min-height: 250px;">
+                    <i class="fa-brands fa-youtube" style="font-size: 6rem; color: #ff0000;"></i>
+                </div>
+                <div class="award-content">
+                    <div class="award-badge" style="color: #ff0000; border-color: rgba(255,0,0,0.3); background: rgba(255,0,0,0.1);"><i class="fa-brands fa-youtube"></i> Video Content</div>
+                    <h3>MD Ishak Rahman</h3>
+                    <h4>Official YouTube Channel</h4>
+                    <p>My official YouTube channel where I share tutorials, tips, and strategies on Digital Marketing, Meta Ads, and SEO. Join the community to stay updated on the latest digital trends.</p>
+                    <a href="https://www.youtube.com/@mdishakrahman" target="_blank" rel="noopener noreferrer" class="btn btn-secondary mt-4"><i class="fa-brands fa-youtube"></i> Visit Channel</a>
+                </div>
+            </div>
+
+            <div class="award-card" style="margin-top: 3rem;">
+                <div class="award-image" style="display: flex; align-items: center; justify-content: center; background: #1a1a1a; min-height: 250px;">
+                    <i class="fa-brands fa-google-drive" style="font-size: 6rem; color: #1FA463;"></i>
+                </div>
+                <div class="award-content">
+                    <div class="award-badge" style="color: #1FA463; border-color: rgba(31,164,99,0.3); background: rgba(31,164,99,0.1);"><i class="fa-solid fa-folder-open"></i> Portfolio Archive</div>
+                    <h3>Complete Work Showcase</h3>
+                    <h4>Graphic Design & Case Studies</h4>
+                    <p>Explore my extended portfolio containing high-quality graphic design assets, branding materials, and comprehensive digital marketing case studies stored in my Google Drive archive.</p>
+                    <a href="https://drive.google.com/drive/folders/1yqHwdkaeRAnCMgBKTil1pwKUozLCn_3H" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-4"><i class="fa-brands fa-google-drive"></i> Access Portfolio</a>
+                </div>
+            </div>
+
+            <div class="award-card" style="margin-top: 3rem;">
+                <div class="award-image" style="display: flex; align-items: center; justify-content: center; background: #1a1a1a; min-height: 250px;">
+                    <i class="fa-solid fa-chart-line" style="font-size: 6rem; color: #3b82f6;"></i>
+                </div>
+                <div class="award-content">
+                    <div class="award-badge" style="color: #3b82f6; border-color: rgba(59,130,246,0.3); background: rgba(59,130,246,0.1);"><i class="fa-solid fa-bullseye"></i> Digital Marketing</div>
+                    <h3>Digital Marketing Projects</h3>
+                    <h4>Campaigns & Strategy Files</h4>
+                    <p>Dive into my digital marketing portfolio, featuring comprehensive ad campaign setups, SEO strategies, analytics reports, and targeted marketing project files.</p>
+                    <a href="https://drive.google.com/drive/folders/11f0kotFidOYfy_ytueyc8eNu1OIPNXr0" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-4"><i class="fa-brands fa-google-drive"></i> View Digital Marketing Files</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="footer">
+        <div class="container fade-in">
+            <div class="footer-grid">
+                
+                <div class="contact-info">
+                    <h3>Let's Collaborate</h3>
+                    <p>Ready to build a powerful brand identity or scale your business with strategic marketing? Reach out today.</p>
+                    
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Mohammadpur, Dhaka</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>01883497992</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>ishakrahman48@gmail.com</span>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://wa.link/3gac5u" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/mdishakrahman" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/mdishakrahman" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/mdishakrahmanmd" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/mdishakrahman" target="_blank" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="https://www.behance.net/mdishakrahman" target="_blank" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+                        <a href="https://www.x.com/mdishakrahmanmd" target="_blank" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 SHAHADAT HOSEN. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
